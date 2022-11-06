@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(images/bg-desktop.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.left {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem 3rem 2rem 1rem;
+  border-radius: 3% 53% 3% 3%;
+}
+.icons__left img {
+  margin: 1rem 0.5rem 0 0.5rem;
+  background-color: darkblue;
+  padding: 0.5rem;
+}
+.right {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem;
+  width: 40%;
+  margin-top: 2rem;
+}
+.text p {
+  opacity: 0.5;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+span {
+  color: white;
+  font-style: italic;
+}
+.progressive__bar {
+  /* width: 100%;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+  border-radius: 1rem 1rem;
+  background-color: darkblue;
+}
+.progressive__bar--inner {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: 70%;
+
+  height: 1rem;
+  border-radius: 1rem 1rem;
+  background-color: cyan;
+}
+#circle {
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 0.7rem;
+  height: 0.3rem;
+  padding: 0.5rem;
+  margin-left: 18.6rem;
+}
+.left__text {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+}
+.right__text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .left {
+    padding: 2rem 3rem 2rem 1rem;
+    border-radius: 3% 53% 3% 3%;
+  }
+  .right {
+    border-radius: 0 0 3% 3%;
+    width: 100%;
+  }
+  .icons__left img {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+  #circle {
+    margin-left: 9rem;
+  }
+  .progressive__bar--inner {
+    width: 50%;
+  }
+  .right__text {
+    margin-top: -1rem;
+  }
+}
